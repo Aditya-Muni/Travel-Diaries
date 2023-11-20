@@ -1,0 +1,106 @@
+.hello {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navbar {
+  @apply fixed top-0 w-screen flex justify-between align-middle z-10;
+}
+.navbar.active {
+  @apply bg-cyan-800 bg-opacity-75;
+}
+
+.btn {
+  @apply cursor-pointer px-4 py-2 mx-12  rounded-xl self-center bg-gray-100  text-cyan-400 border-[1px] border-gray-100 font-semibold hover:bg-cyan-700 hover:border-gray-100 hover:border-[1px];
+}
+.nav-link > a {
+  @apply cursor-pointer px-8 self-center font-semibold hover:text-cyan-400;
+}
+.header {
+  @apply text-6xl font-semibold text-cyan-400;
+}
+
+.bg-hero {
+  background-image: url(./assets/background.png);
+  background-size: cover;
+}
+
+.bg-review {
+  background-image: url(./assets/review-bg.png);
+  background-size: cover;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+  display: flex;
+}
+
+p {
+  @apply text-[#6CA49F] font-medium;
+}
+
+#root {
+  overflow: clip;
+  /* height: 4000px; */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* after login */
+.navbar2 {
+  @apply top-0 w-screen flex justify-between align-middle z-10;
+}
+.nav-link2 > a {
+  @apply cursor-pointer px-8 self-center font-semibold text-[#6CA49F] hover:text-cyan-400;
+}
+.filter-btn {
+  @apply cursor-pointer py-1 mx-4 self-center bg-gray-100 text-lg text-cyan-400 font-semibold hover:text-[#6CA49F];
+}
+
+/*#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+ .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
